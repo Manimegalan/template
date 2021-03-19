@@ -1,14 +1,11 @@
-import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./routes";
 
 function App() {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
-      </div>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 
